@@ -1,17 +1,19 @@
-body {
-    font-family: helvetica;
-}
-
-ul {
-    font-family: monospace;
+.body:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:-1;
+    opacity:0.3;
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6b7c5fa6-b824-4430-b544-2102ad555fd1.jpg?source=Alphaville");
+    background-size: cover;
+    background-position: center;
 }
 
 li {
     list-style: circle;
-}
-
-.list {
-    list-style: square;
 }
 
 #date {
