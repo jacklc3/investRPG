@@ -1,23 +1,117 @@
-.body:before {
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:-1;
-    opacity:0.3;
-    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6b7c5fa6-b824-4430-b544-2102ad555fd1.jpg?source=Alphaville");
-    background-size: cover;
-    background-position: center;
+/* Top Bar */
+
+#topBar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 32px;
+    background: black;
+    color: #ccc;
 }
 
-li {
-    list-style: circle;
+#topBar>div {
+    display: inline-block;
+    float: left;
+    border-right: 1px solid #000;
+    box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.2) inset;
+    padding: 7px 8px 9px 8px;
+    position: relative;
 }
 
-#date {
-    font-size: 12px;
-    font-style: italic;
-    font-weight: bold;
+/* Main page */
+
+/* Top level */
+
+#mainPage {
+    position: absolute;
+    left: 0px;
+    top: 32px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    background: url(img/background.jpg) no-repeat center center fixed;
+    background-size: cover;;
+}
+
+.horizontalSeparator {
+    background: url(img/horizontalSeparator.jpg) repeat-y;
+    position: absolute;
+    width: 16px;
+    height: 100%;
+    z-index: 100;
+}
+
+.verticalSeparator {
+    background: url(img/verticalSeparator.jpg) repeat-y;
+    position: absolute;
+    overflow: hidden;
+    height: 16px;
+    width: 100%;
+    z-index: 100;
+}
+
+.section {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    min-width: 100px;
+    overflow: hidden;
+}
+
+.left {
+    left: 0px;
+    width: 400px;
+}
+
+.middle {
+    left: 416px;
+    right: 30%;
+    margin-right: 16px;
+}
+
+.right {
+    left: 70%;
+    right: 0px;
+}
+
+/* Title */
+
+#titleBlock {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+}
+
+/* Avatar */
+
+#avatarBlock {
+    position: absolute;
+    height: 50%;
+    top: 20%;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+#avatarAnchor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#avatar {
+    background: url(img/avatar.png) no-repeat;
+    position: absolute;
+    top: -130px;
+    left: -66px;
+    height: 260px;
+    width: 132px;
+}
+
+/* Geeneral formatting */
+
+a, a:visited {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #ccc;
 }
